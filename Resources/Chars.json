@@ -1,7 +1,7 @@
 ﻿{
    "pcs":[
       {
-		 "Color":"#0c7ef0",
+         "Color":"#0c7ef0",
          "Name":"Caelynn Greywood",
          "Race":"Elf",
          "Class":"Bard",
@@ -20,7 +20,7 @@
 		 "Skills":[0,0,0,0,1,1,0,0,0,0,0,2,0,0,0,1,1,0,0,1,2,0,0,0]
       },
       {
-		 "Color":"#f5e53b",
+         "Color":"#f5e53b",
          "Name":"Lokt Arogar",
          "Race":"Human",
          "Class":"Paladin",
@@ -39,7 +39,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#f7f2bc",
+         "Color":"#f7f2bc",
          "Name":"Ordrin Lighthand",
          "Race":"Dwarf",
          "Class":"Cleric",
@@ -58,7 +58,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#ed620c",
+         "Color":"#ed620c",
          "Name":"Thalion Naruine",
          "Race":"Genasi",
          "Class":"Sorcerer",
@@ -77,7 +77,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#09e68d",
+         "Color":"#09e68d",
          "Name":"Emerald Longshore",
          "Race":"Genasi",
          "Class":"Druid",
@@ -96,7 +96,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#8f36f5",
+         "Color":"#8f36f5",
          "Name":"Verna Shortwick",
          "Race":"Halfling",
          "Class":"Rogue",
@@ -115,7 +115,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#29b524",
+         "Color":"#29b524",
          "Name":"Garlant",
          "Race":"Firbolg",
          "Class":"Monk",
@@ -134,7 +134,7 @@
 		 "Skills":[]
       },
       {
-		 "Color":"#f21111",
+         "Color":"#f21111",
          "Name":"Adara The Patient",
          "Race":"Gnome",
          "Class":"Barbarian",
