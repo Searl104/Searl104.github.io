@@ -3,11 +3,15 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<<<<<<< HEAD
 <base href="https://searl104.github.io/Searl104.github.io/Resources/" target = "_blank">
+=======
+>>>>>>> 3c49a20e2ebe43af02ba6d3a311fcd5cb86f6bca
 <style>
   
 @import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
 
+<<<<<<< HEAD
 *{
   box-sizing: border-box;
 }
@@ -47,10 +51,41 @@ body {
 }
 /* Clear floats after the columns */
 .row {
+=======
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'El Messiri', sans-serif;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+>>>>>>> 3c49a20e2ebe43af02ba6d3a311fcd5cb86f6bca
   content: "";
   display: table;
   clear: both;
 }
+<<<<<<< HEAD
 /* The expanding image container */
 .container {
   position: absolute;
@@ -58,6 +93,15 @@ body {
   padding: 0 0 0 0;
   width: 100%;
 }
+=======
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+>>>>>>> 3c49a20e2ebe43af02ba6d3a311fcd5cb86f6bca
 /* Expanding image text */
 #imgtext {
   position: absolute;
@@ -66,6 +110,10 @@ body {
   color: white;
   font-size: 20px;
 }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3c49a20e2ebe43af02ba6d3a311fcd5cb86f6bca
 /* Closable button inside the expanded image */
 .closebtn {
   position: absolute;
@@ -78,6 +126,7 @@ body {
 </style>
 </head>
 <body>
+<<<<<<< HEAD
 <!-- The four columns -->
 <div class="row">
   <div class="column">
@@ -113,6 +162,35 @@ body {
   <div id="imgtext"></div>
 </div>
 -->
+=======
+
+<div style="text-align:center">
+  <h2>The Adventurers</h2>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="/Resources/images/Ordrin@2x.png" alt="Ordrin" style="width:25%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/Resources/images/Ordrin@2x.png" alt="Ordrin" style="width:25%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/Resources/images/Ordrin@2x.png" alt="Ordrin" style="width:25%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="/Resources/images/Ordrin@2x.png alt="Ordrin" style="width:25%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:25%">
+  <div id="imgtext"></div>
+</div>
+
+>>>>>>> 3c49a20e2ebe43af02ba6d3a311fcd5cb86f6bca
 <script>
 function myFunction(imgs) {
   var expandImg = document.getElementById("expandedImg");
