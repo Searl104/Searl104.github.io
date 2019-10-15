@@ -2,26 +2,63 @@
 <html>
 
 <head>
- <base href="https://searl104.github.io/Searl104.github.io/Resources/" target = "_blank"> 
+ <base href="Resources/" target = "_blank">
 </head>
 
 <style>
  
-body{  
+@import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
+
+body{
   background: url("images/bgtile.png") #f5eca2;
   background-position:top center;
-  background-size:512px;
+  background-size:256px;
   width:100%;
-  max-width:780px;
+  max-width:1024px;
   margin:auto;
+  font-family: 'El Messiri', sans-serif;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #301515;
+  overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #cecece;
+  text-align: center;
+  padding: 12px 24px;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #c5fbff;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: rgb(57, 120, 124);
+  color: white;
 }
 
 </style>
 
 <body>
-
- <iframe href = "adventurers.html">
  
-</body>
+    <div class="topnav">
+        <a class = "active" href="adventurers.html">Adventurers</a>
+        <a href="#news">Maps</a>
+        <a href="#contact">Rumors</a>
+        <a href="#about">Town Upgrades</a>
+    </div>
 
+</body>
 </html>
+
