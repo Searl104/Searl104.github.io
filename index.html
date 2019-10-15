@@ -1,11 +1,126 @@
+  
 <!DOCTYPE html>
 <html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<base href="https://searl104.github.io/Searl104.github.io/Resources/" target = "_blank">
+<style>
+  
+@import url('https://fonts.googleapis.com/css?family=El+Messiri&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'El Messiri', sans-serif;
+  background-color: #222;
+}
+/* The Header*/
+.header {
+	text-align:center;
+	width:100%;
+    height:68px;
+    font-size:60px;
+    color:#dedede;    
+}
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: .5% .5% .5% .5%;
+  
+}
+/* Style the images inside the grid */
+.column img {
+  opacity: 1; 
+  cursor: pointer;
+  width: 75%;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top:auto;
+  margin-bottom:auto;
+}
+.column img:hover {
+  width: 80%;
+}
+/* Clear floats after the columns */
+.row {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The expanding image container */
+.container {
+  position: absolute;
+  display: none;
+  padding: 0 0 0 0;
+  width: 100%;
+}
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm here to be a page!</p>
-<p>I'm hosted with GitHub Pages.</p>
-<img src = https://lh3.googleusercontent.com/vX8iFLEA89mQI866b8eLldkq2h61t6MM_1RAzr0v5pvc9nkh3GfRow1JaeEJXvdTpQNr9m1tui-RAtUlRR8P2nUCAZ4xCQnjC6hVQHBj8jIl6wYoxH7Cy9b0P9hcOH5u5PpZ5Lxaw7jegZqKbPMClgjLRT5lOdfS1hR-CDuyguHww2Db4mehC13d8siwTWBzKhzOSoEJozlC0mGtoi3JMDCbxrKuXqM-ZOtjY6pHlBS2-qhPbIsmAWPmZgM7bAnRJE9iTu6s6pRpb7BeS73BhU50Fft4pnuOMVF_D35NR4NlBL59rLYYzfKIVifGOJN90sN-D4CO9Zz5BwjGwfgdAXEHoQs91qUhEJWKeHo3oYE_9n1msyG6jTc9ftPz6Dk02vh3qQCjZkyHpwpOn36SXiBZP6bo9Qfs1Ua5yjAJ_nhzXwbvQTfGxGk499Od3isJehstYJ6vZB5SDeC6-BF5aEWpnG5ZRC15qQNSLPQ74PBS16G_qCnFSdNJJ21__2pvh6NieodPoI3OI9t4jbkkX5ReyvYucBEJqeFhKIqxauIQhofYTPcJF_R28hGesTrUKqos2l391wh86xqPK9rr7hLoTYYxVFZACKvlbg28E-66VjET4FjLKSwKUuUNz4_JH9NozEvOjfzGIN0ukkd2hs3InzOJ6CAdgOwM-bKCMt5eoz6Rzxlkxg=w390-h480-no>
-<br>
-<a href = "BuildWeb/index.html">Game</a>  
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="images/Caelynn@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Lokt@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Ordrin@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Thalion@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <br>
+  <div class="column">
+    <img src="images/Emerald@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Verna@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Garlant@2x.png" onmouseenter="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="images/Adara@2x.png" onmouseenter="myFunction(this);">
+  </div>
+</div>
+<!--
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&Chi;</span>
+  <img id="expandedImg" width = 75% style="padding: 0 1 0 1;  display:block; margin-left:auto; margin-right: auto;">
+  <div id="imgtext"></div>
+</div>
+-->
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script> 
 </body>
 </html>
