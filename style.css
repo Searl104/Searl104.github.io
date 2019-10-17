@@ -31,7 +31,7 @@ html,body
     width: 100%;
     padding: 8pt 0pt;
     text-align: center;
-    font-size: 8em;
+    font-size: 3.5em;
     font-weight: 900;
 }
 
@@ -39,11 +39,10 @@ html,body
 {
     display: block;
     text-align: center;
-    font-size: 2em;
+    font-size: 1em;
     font-weight: 400;
-    letter-spacing:16pt;
+    letter-spacing:11pt;
     padding: 8pt 20pt;
-    border: 8px;
     border-style: double none double none;
 }
 
@@ -60,14 +59,14 @@ html,body
     text-align: center;
     background: rgba(255, 255, 255, 0.123);
     cursor:pointer;
-    border: 16px double;
-    min-width: 500px;
-    padding:5pt 10pt;
+    border: 6px double;
+    min-width: 350px;
+    padding:5pt 0pt;
     margin:12pt 12pt;
-    font-size: 3em;
+    font-size: 2.2em;
 }
 
-.buttonLink:active
+.buttonLink:hover
 {
     background: rgba(245, 245, 245, 0.43);    
 }
