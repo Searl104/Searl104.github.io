@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|El+Messiri&display=swap');
 *{
-    --main-theme-color: rgb(66, 23, 15);
-    /* --position-ref: auto; */
+    --main-theme-color: rgb(59, 19, 13);
+    --position-ref: auto;
     font-family: 'Crimson Text', 'serif';
 }
 html,body
@@ -51,7 +51,7 @@ html,body
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 26pt;
+    margin-top: 26pt;
     max-width: 100%;
 }
 
