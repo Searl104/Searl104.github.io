@@ -1,86 +1,72 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|El+Messiri&display=swap');
 *{
-    margin: 0;
-    padding: 0;
     --main-theme-color: rgb(59, 19, 13);
     --position-ref: auto;
     font-family: 'Crimson Text', 'serif';
 }
 html,body
 {
-    height: 100%;
+    margin: unset;
+    display: flex;
+    justify-content: center;
+    min-width: 400px;
     background-color: #948f72;
     background-image: url("Resources/images/forest-1109180_1280.jpg");
-    background-position: center;
     background-size: cover;
+    background-position: center;
     background-blend-mode: soft-light;
     color: var(--main-theme-color);
-    font-size:100%;
 }
 
 .content{
-    width: 100%;
-    height: max-content;
+    display:flex;
+    flex-direction: column;
     margin: var(--position-ref) auto;
-    position: absolute;
-    top:-20%;
-    bottom:0px;
-    right: 0px;
-    left: 0px;
-    text-align: center;
+    align-items: center;
 }
 
 .title1
-{
-    display:block;
-    height:95pt;
-    text-align:center;
-    font-size: 8em;
-    font-weight: 600;
+{   
+    display: block;
+    width: 100%;
+    padding: 8pt 0pt;
+    text-align: center;
+    font-size: 3.5em;
+    font-weight: 900;
 }
 
 .title2
-{    
-    display: inline-block;
-    width:90%;
-    font-size: 30pt;
-    text-align:center;
+{
+    display: block;
+    text-align: center;
+    font-size: 1em;
     font-weight: 400;
-    letter-spacing:21pt;
-    margin-top:30px;
-    padding-left:20pt;
+    letter-spacing:11pt;
+    padding: 8pt 20pt;
     border-style: double none double none;
 }
 
 .buttonTable{
-
-    width: 100%;
-    height: max-content;
-    margin: var(--position-ref) auto;
-    text-align: center;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 26pt;
+    max-width: 66%;
 }
 
 .buttonLink{
     display: inline-block;
-    width:250pt;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.123);
+    cursor:pointer;
+    border: 6px double;
+    min-width: 350px;
     padding:5pt 0pt;
     margin:12pt 12pt;
-    background: rgba(255, 255, 255, 0.123);
-    font-size: 25pt;
-    font-weight: 400;
-    text-align: center;
-    border: 6px double;
-    cursor:pointer;
+    font-size: 2.2em;
 }
 
 .buttonLink:hover
 {
     background: rgba(245, 245, 245, 0.43);    
-}
-
-.space{
-
-    margin:auto 80px;
-    
 }
