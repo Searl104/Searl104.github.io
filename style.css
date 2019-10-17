@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text|El+Messiri&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    --main-theme-color: rgb(59, 19, 13);
+    --position-ref: auto;
+    font-family: 'Crimson Text', 'serif';
+}
+html,body
+{
+    height: 100%;
+    background-color: #948f72;
+    background-image: url("Resources/images/forest-1109180_1280.jpg");
+    background-position: center;
+    background-size: cover;
+    background-blend-mode: soft-light;
+    color: var(--main-theme-color);
+    font-size:100%;
+}
+
+.content{
+    width: 100%;
+    height: max-content;
+    margin: var(--position-ref) auto;
+    position: absolute;
+    top:-20%;
+    bottom:0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+}
+
+.title1
+{
+    display:block;
+    height:95pt;
+    text-align:center;
+    font-size: 8em;
+    font-weight: 600;
+}
+
+.title2
+{    
+    display: inline-block;
+    width:90%;
+    font-size: 30pt;
+    text-align:center;
+    font-weight: 400;
+    letter-spacing:21pt;
+    margin-top:30px;
+    padding-left:20pt;
+    border-style: double none double none;
+}
+
+.buttonTable{
+
+    width: 100%;
+    height: max-content;
+    margin: var(--position-ref) auto;
+    text-align: center;
+
+}
+
+.buttonLink{
+    display: inline-block;
+    width:250pt;
+    padding:5pt 0pt;
+    margin:12pt 12pt;
+    background: rgba(255, 255, 255, 0.123);
+    font-size: 25pt;
+    font-weight: 400;
+    text-align: center;
+    border: 6px double;
+    cursor:pointer;
+}
+
+.buttonLink:hover
+{
+    background: rgba(245, 245, 245, 0.43);    
+}
+
+.space{
+
+    margin:auto 80px;
+    
+}
