@@ -1,0 +1,30 @@
+<character>
+    <name>Ordrin Lighthand</name>
+    <race>Dwarf</race>
+    <class>Cleric</class>
+    <level>3</level>
+    <xp>1435</xp>
+    <prof>2</prof>
+    <ability>
+        <str>15</str>
+        <dex>14</dex>
+        <con>17</con>
+        <int>12</int>
+        <wis>18</wis>
+        <cha>7</cha>
+    </ability>
+    <savingthrow>Wisdom</savingthrow>
+    <savingthrow>Charisma</savingthrow> 
+    <skillProf>History</skillProf>
+    <skillProf>Medicine</skillProf>
+    <skillProf>Nature</skillProf>
+    <skillProf>Persuasion</skillProf>
+    <skillProf>Religion</skillProf>
+    <toolProf>Smith's Tools</toolProf>
+    <toolProf>Cartography Kit</toolProf>  
+    <language>Common</language>
+    <language>Dwarvish</language>
+    <language>Draconic</language>
+    <language>Infernal</language>
+    <language>Celestial</language>
+</character>
