@@ -100,7 +100,7 @@ body{
     padding:6px;
     min-width:150px;
     max-width:4vw;
-    height:50px;
+    height:auto;
     cursor:pointer;
 }
 
