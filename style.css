@@ -1,73 +1,108 @@
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|El+Messiri&display=swap');
+
 *{
     --main-theme-color: rgb(59, 19, 13);
     --position-ref: auto;
-    font-family: 'Crimson Text', 'serif';
+    font-family: 'Crimson Text';
+    margin: unset;    
 }
-html,body
-{
-    margin: unset;
-    display: flex;
-    justify-content: center;
-    min-width: 400px;
+
+html{
+    min-width: 500px;
     background-color: #948f72;
     background-image: url("Resources/images/forest-1109180_1280.jpg");
-    background-size: cover;
-    background-position: center;
+    background-size:cover;
     background-blend-mode: soft-light;
     color: var(--main-theme-color);
 }
 
 .content{
-    display:flex;
     flex-direction: column;
     margin: var(--position-ref) auto;
     align-items: center;
 }
 
 .title1
-{   
-    display: block;
-    width: 100%;
-    padding: 8pt 0pt;
-    text-align: center;
-    font-size: 3.5em;
-    font-weight: 900;
+{
+    margin:12px;
+    font-size: 6em;
+    font-weight: 400;
+    text-decoration:none;
+    cursor:default;
+    width:fit-content;
 }
 
 .title2
 {
-    display: block;
     width:75%;
-    text-align: center;
     font-size: 1em;
     font-weight: 400;
-    letter-spacing:11pt;
-    padding: 8pt 20pt;
+    letter-spacing:12pt;
+    padding: 6pt 30pt;
+    margin-bottom:12px;
+    border:6px;
     border-style: double none double none;
+    cursor:default;
 }
 
-.buttonTable{
-    display: flex;
+.button-table{
     flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 26pt;
-    max-width: 100%;
+    max-width:1080px;
 }
 
-.buttonLink{
-    display: inline-block;
-    text-align: center;
+.button-link{
     background: rgba(255, 255, 255, 0.123);
     cursor:pointer;
-    border: 6px double;
     min-width: 350px;
     padding:5pt 0pt;
     margin:12pt 12pt;
-    font-size: 2.2em;
+    font-size: 2em;
+    border: 6px double;
+    text-decoration:none;
+    color:var(--main-theme-color);
 }
 
-.buttonLink:hover
+.button-link:hover
 {
     background: rgba(245, 245, 245, 0.43);    
+}
+
+.content, .button-table, html, .worldanvil-map, .card-grid
+{
+    display:flex;
+    justify-content: center;
+}
+
+.title1, .title2, .button-link
+{
+    display:inline_block;
+    text-align:center;        
+}
+
+.worldanvil-map
+{
+    border:12px;
+    border-style:double;
+    width:97vw;
+    height:80vh;
+}
+
+.card-grid
+{
+    flex-wrap:wrap;
+    width:100vw;
+    max-width:1200px;
+}
+
+.flipcard
+{
+    width:350px;
+    cursor:pointer;
+    margin:12px;
+}
+
+a[href*="index.html"]
+{
+    color:var(--main-theme-color);
+    cursor:pointer;
 }
