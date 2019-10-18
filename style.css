@@ -27,11 +27,12 @@ body{
 .title1
 {
     height:auto;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: 400;
     text-decoration:none;
     cursor:default;
     width:fit-content;
+    margin-top:-50px;
 }
 
 .title2
@@ -85,23 +86,21 @@ body{
 {
     border:11px;
     border-style:double;
-    width:96vw;
-    height:80vh;
+    width:95vw;
+    height:68vh;
 }
 
 .card-grid
 {
     flex-wrap:wrap;
-    width:100vw;
-    max-width:1200px;
 }
 
 .flipcard
 {
-    width:80vw;
-    max-width:300px;
+    padding:6px;
+    min-width:150px;
+    max-width:4vw;
     cursor:pointer;
-    padding:12px;
 }
 
 a[href*="index.html"]
