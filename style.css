@@ -2,13 +2,12 @@
 
 *{
     --main-theme-color: rgb(59, 19, 13);
-    --position-ref: auto;
     font-family: 'Crimson Text';
-    margin: 8pt;    
 }
 
 html{
-    min-width: 100vw;
+    padding: 24pt;
+    height:auto;
     background-color: #948f72;
     background-image: url("Resources/images/forest-1109180_1280.jpg");
     background-size:cover;
@@ -16,15 +15,18 @@ html{
     color: var(--main-theme-color);
 }
 
+body{
+    margin:unset;
+}
+
 .content{
     flex-direction: column;
-    margin: var(--position-ref) auto;
     align-items: center;
 }
 
 .title1
 {
-    margin:12px;
+    height:auto;
     font-size: 6em;
     font-weight: 400;
     text-decoration:none;
@@ -39,7 +41,7 @@ html{
     font-weight: 400;
     letter-spacing:12pt;
     padding: 6pt 30pt;
-    margin-bottom:12px;
+    margin:12px auto;
     border:6px;
     border-style: double none double none;
     cursor:default;
@@ -81,7 +83,7 @@ html{
 
 .worldanvil-map
 {
-    border:12px;
+    border:11px;
     border-style:double;
     width:96vw;
     height:80vh;
@@ -96,9 +98,10 @@ html{
 
 .flipcard
 {
-    width:350px;
+    width:80vw;
+    max-width:300px;
     cursor:pointer;
-    margin:12px;
+    padding:12px;
 }
 
 a[href*="index.html"]
