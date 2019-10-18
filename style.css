@@ -4,11 +4,11 @@
     --main-theme-color: rgb(59, 19, 13);
     --position-ref: auto;
     font-family: 'Crimson Text';
-    margin: unset;    
+    margin: 8pt;    
 }
 
 html{
-    min-width: 500px;
+    min-width: 100vw;
     background-color: #948f72;
     background-image: url("Resources/images/forest-1109180_1280.jpg");
     background-size:cover;
