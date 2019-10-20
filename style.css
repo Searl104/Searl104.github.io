@@ -94,8 +94,8 @@ body{
 .flipcard
 {
     padding:6px;
-    width:33vw;
-    height:unset;
+    width:200px;
+    height:250px;
     cursor:pointer;
 }
 
