@@ -73,12 +73,14 @@ body{
 {
     display:flex;
     justify-content: center;
+    flex-wrap:wrap;
 }
 
 .title1, .title2, .button-link
 {
     display:inline_block;
-    text-align:center;        
+    text-align:center;
+           
 }
 
 .worldanvil-map
@@ -89,16 +91,10 @@ body{
     height:68vh;
 }
 
-.card-grid
-{
-    flex-wrap:wrap;
-}
-
 .flipcard
 {
     padding:6px;
-    min-width:150px;
-    max-width:20vw;
+    width:20px;
     cursor:pointer;
 }
 
