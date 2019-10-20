@@ -100,7 +100,7 @@ body{
     padding:6px;
     min-width:150px;
     max-width:20vw;
-    height:inherit;
+    height:80px;
     cursor:pointer;
 }
 
