@@ -5,6 +5,15 @@
     font-family: 'Crimson Text';
 }
 
+div{display: flex;}
+
+a[href*="index.html"]
+{
+    color:var(--main-theme-color);
+    cursor:pointer;
+    box-sizing: border-box;
+}
+
 html{
     padding: 24pt;
     background-color: #948f72;
@@ -23,6 +32,15 @@ body{
     align-items: center;
 }
 
+.row
+{
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-between;
+    border: yellow;
+    border-style: dotted;
+}
+
 .title1
 {
     height:auto;
@@ -36,6 +54,7 @@ body{
 
 .title2
 {
+    display:block;
     width:75%;
     font-size: 1em;
     font-weight: 400;
@@ -46,6 +65,8 @@ body{
     border-style: double none double none;
     cursor:default;
 }
+
+/* Home page items*/
 
 .button-table{
     flex-wrap: wrap;
@@ -69,7 +90,7 @@ body{
     background: rgba(245, 245, 245, 0.43);    
 }
 
-.content, .button-table, html, .worldanvil-map, .card-grid
+.content, .button-table, html, .card-grid
 {
     display:flex;
     justify-content: center;
@@ -80,15 +101,28 @@ body{
 {
     display:inline_block;
     text-align:center;
-           
 }
+
+/* Map page Items*/
 
 .worldanvil-map
 {
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
     border:11px;
     border-style:double;
     width:95vw;
     height:68vh;
+}
+
+/* Character page Items*/
+
+.card-grid
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
 }
 
 .flipcard
@@ -99,8 +133,58 @@ body{
     cursor:pointer;
 }
 
-a[href*="index.html"]
+/* Upgrade Page Items */
+
+.upgradeContainer
 {
-    color:var(--main-theme-color);
-    cursor:pointer;
+    border: black;
+    border-style: dotted;
+    margin: 8px;
+}
+
+.upgradeIcon
+{
+    border: blue;
+    border-style: dotted;
+    width: 20vw;
+    height: width;
+}
+
+.upgradeHeadInfo
+{
+    flex-direction: column;
+    flex-grow: 1;    
+}
+
+.upgradeHeadInfo > div
+{    
+    border: green;
+    border-style: dotted;
+    height:33%;
+}
+
+.upgradeName
+{
+    display: inline-block;
+    text-align: left;
+    font-size: 18px;
+    padding:12px;
+}
+
+.bar
+{   
+    display: inline-block;
+    height:100%;
+    width:75%;
+    background-color: yellow;
+}
+
+.barBase
+{
+    display: inline-block;
+    height:100%;
+    width:100%;
+    background-color: rgba(238, 255, 0, 0.123);
+    font-size: 2em;
+    text-align: center;
 }
