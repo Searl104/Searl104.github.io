@@ -1,9 +1,3 @@
-class adventure {
-    constructor(title, body) {
-        this.title = title;
-        this.body = body;
-    }
-}
 
 var adventures = [
     new adventure(
@@ -26,30 +20,8 @@ var adventures = [
     <p>Swimming down the well the party found an open (dry) room, with another mysterious door at the end. Four lights on the wall were shown to be eye-like constructs acting as sentries telling the group to stay back from the door. Lokt and Ordrin were able to communicate with the sentries in draconic, receiving translations of the undercommon writings found on the doors and well. They were told this place was the Alms House of Il'manieri, and were given a point on the map of the Temple of Il'manieri. This temple being where to get proper permission to enter the doors, the party decided not to fight the sentries but headed back to town.`)
 ];
 
-loadXMLDoc();
-function loadXMLDoc() {
-    var xmlhttp = new XMLHttpRequest();
-    xmlhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-        myFunction(this);
-      }
-    };
-    xmlhttp.open("GET", "/Resources/adventures.xml", true);
-    xmlhttp.send();
-  }
-  
-  function myFunction(xml) {
-    var x, i, xmlDoc, txt;
-    xmlDoc = xml.responseXML;
-    txt = "";
-    x = xmlDoc.getElementsByTagName("collection");
-    for (i = 0; i< x.length; i++) {
-      txt += x[i].childNodes[0].nodeValue + "<br>";
-    }
-    document.getElementById("demo").innerHTML = txt;
-  }
-
 inject('articles');
+
 function inject(into) {
     var i = adventures.length-1
     for (adventure in adventures) {
@@ -58,5 +30,12 @@ function inject(into) {
         <div class='articleText'>${adventures[i].body}</div>
         </div>`;
         i--;
+    }
+}
+
+class adventure {
+    constructor(title, body) {
+        this.title = title;
+        this.body = body;
     }
 }
