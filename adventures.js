@@ -28,28 +28,35 @@ var adventures = [
 
 loadXMLDoc();
 function loadXMLDoc() {
-  var xmlhttp;
-  if (window.XMLHttpRequest) {
-    xmlhttp = new XMLHttpRequest();
+    var xmlhttp = new XMLHttpRequest();
+    xmlhttp.onreadystatechange = function() {
+      if (this.readyState == 4 && this.status == 200) {
+        myFunction(this);
+      }
+    };
+    xmlhttp.open("GET", "Resources/adventures.xml", true);
+    xmlhttp.send();
   }
-  xmlhttp.onreadystatechange = function() {
-    if (this.readyState == 4 && this.status == 200) {
-      document.getElementById("demo").innerHTML =
-      this.responseText;
+  
+  function myFunction(xml) {
+    var x, i, xmlDoc, txt;
+    xmlDoc = xml.responseXML;
+    txt = "";
+    x = xmlDoc.getElementsByTagName("entry");
+    for (i = 0; i< x.length; i++) {
+      txt += x[i].childNodes[0].nodeValue + "<br>";
     }
-  };
-  xmlhttp.open("GET", "Resources/adventures.xml", true);
-  xmlhttp.send();
-}
+    document.getElementById("demo").innerHTML = txt;
+  }
 
 inject('articles');
 function inject(into) {
-    var i = 0
+    var i = adventures.length-1
     for (adventure in adventures) {
         document.getElementById(into).innerHTML += `<div id = 'cont' class='articleContainer'>
         <h3 class='articleTitle'>${adventures[i].title}<div class='lh'></div></h3>
         <div class='articleText'>${adventures[i].body}</div>
         </div>`;
-        i++;
+        i--;
     }
 }
