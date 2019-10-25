@@ -24,14 +24,6 @@ var adventures = [
 ]
 inject('articles');
 
-function ReadFromFiles()
-{
-    var xhttp = new XMLHttpRequest
-    
-
-
-}
-
 function inject(into) {
     var i = 0
     for (adventure in adventures) {
