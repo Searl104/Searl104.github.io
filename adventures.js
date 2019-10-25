@@ -34,7 +34,7 @@ function loadXMLDoc() {
         myFunction(this);
       }
     };
-    xmlhttp.open("GET", "Resources/adventures.xml", true);
+    xmlhttp.open("GET", "/Resources/adventures.xml", true);
     xmlhttp.send();
   }
   
@@ -42,7 +42,7 @@ function loadXMLDoc() {
     var x, i, xmlDoc, txt;
     xmlDoc = xml.responseXML;
     txt = "";
-    x = xmlDoc.getElementsByTagName("entry");
+    x = xmlDoc.getElementsByTagName("collection");
     for (i = 0; i< x.length; i++) {
       txt += x[i].childNodes[0].nodeValue + "<br>";
     }
