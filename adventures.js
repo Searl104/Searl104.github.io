@@ -49,6 +49,7 @@ function loadXMLDoc(path) {
     xmlhttp.onreadystatechange = function() {
       if (this.readyState == 4 && this.status == 200) {
         adventureXML = this.responseXML;
+        console.log(adventureXML);
       }
     };
     xmlhttp.open("GET", path , true);
