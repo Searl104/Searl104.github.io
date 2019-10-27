@@ -1,4 +1,10 @@
-
+class adventure {
+    constructor(title, body) {
+        this.title = title;
+        this.body = body;
+    }
+}
+   
 var adventures = [
     new adventure(
         "Adventure 1: Caverns and Kobolds",
@@ -30,12 +36,5 @@ function inject(into) {
         <div class='articleText'>${adventures[i].body}</div>
         </div>`;
         i--;
-    }
-}
-
-class adventure {
-    constructor(title, body) {
-        this.title = title;
-        this.body = body;
     }
 }
