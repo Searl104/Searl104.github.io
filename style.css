@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css?family=Crimson+Text|El+Messiri&display=swap'); * {
     --main-theme-color: rgb(59, 19, 13); font-family: 'Crimson Text';
     box-sizing: border-box;
@@ -14,20 +15,22 @@ html.. {
     background-image: url("Resources/images/forest-1109180_1280.jpg");
     background-size: cover;
     background-blend-mode: soft-light;
-    color: var(--main-theme-color);
 }
 
 body {
-    margin: unset;
+	color: var(--main-theme-color);
+    margin: unset;    
     flex-direction: column;
-    align-items: center;
-    justify-content: center; 
+    align-items: middle;
+    
 }
 
 .content {
     padding-top: 20px;
+    height: 100vh;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 .title1 {
@@ -186,3 +189,4 @@ body {
     width: 100%;
     background-color: var(--main-theme-color);
 }
+
