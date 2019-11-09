@@ -8,7 +8,7 @@ a[href*="index.html"] {
     cursor: pointer;
 }
 
-html {
+html.. {
     padding: 24pt;
     background-color: #948f72;
     background-image: url("Resources/images/forest-1109180_1280.jpg");
